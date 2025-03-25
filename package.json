@@ -4,7 +4,9 @@
   "description": "test de practica",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pruebas-edge": "cypress run --spec cypress/e2e/SmokeTestChoucair.cy.js --browser edge",
+    "pruebas-chrome": "cypress run --spec cypress/e2e/SmokeTestChoucair.cy.js --browser chrome",
+    "pruebas-firefox": "cypress run --spec cypress/e2e/SmokeTestChoucair.cy.js --browser firefox"        
   },
   "author": "Mathewcito",
   "license": "ISC",

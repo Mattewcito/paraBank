@@ -1,6 +1,6 @@
 describe("SmokeTest - Choucair", () => {
   const userData = {
-    username: "Mathewcito-v11",
+    username: "Mathewcito-v12",
     password: "1000294910"
   };
 
