@@ -1,0 +1,24 @@
+# language: es
+Característica: Automatización de operaciones en Parabank
+
+Como usuario nuevo de Parabank
+  Quiero poder registrarme, abrir una cuenta y transferir fondos
+  Para gestionar mis operaciones bancarias básicas en línea
+
+Escenario: Registro de un nuevo usuario
+  Dado que el usuario accede al sitio web de Parabank
+  Cuando navega a la sección de registro
+  Y completa el formulario de registro con datos válidos
+  Entonces debería ver un mensaje de bienvenida indicando el ingreso exitoso
+
+Escenario: Creación de una nueva cuenta de ahorros
+  Dado que el usuario ha iniciado sesión correctamente
+  Cuando accede a la opción "Open New Account"
+  Y selecciona una cuenta de tipo "SAVINGS"
+  Entonces debería ver un mensaje confirmando la creación de la cuenta
+
+Escenario: Transferencia de fondos entre cuentas
+  Dado que el usuario tiene al menos dos cuentas disponibles
+  Cuando accede a la opción "Transfer Funds"
+  Y realiza una transferencia entre cuentas diferentes con un monto válido
+  Entonces debería ver un mensaje indicando que la transferencia fue exitosa
